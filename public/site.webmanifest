@@ -1,0 +1,8 @@
+{
+  "name": "Shahrah Trade",
+  "short_name": "Shahrah",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07182D",
+  "theme_color": "#07182D"
+}
