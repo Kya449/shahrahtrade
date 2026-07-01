@@ -26,12 +26,18 @@ export default function Header() {
           </a>
         </nav>
 
-        <a
-          href="#contact"
-          className="rounded-xl bg-[#D4AF37] px-6 py-3 font-bold text-[#07182D] transition hover:scale-105"
-        >
-          Get Quote
-        </a>
+        <div className="flex items-center gap-3">
+
+          <a
+            href="#contact"
+            className="rounded-xl bg-[#D4AF37] px-6 py-3 font-bold text-[#07182D] transition hover:scale-105"
+          >
+            Get Quote
+          </a>
+
+          <LanguageSwitcher />
+
+        </div>
 
       </div>
     </header>
