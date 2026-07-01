@@ -10,11 +10,9 @@ import Footer from "../../components/Footer";
 import CTA from "../../components/CTA";
 import SectionDivider from "../../components/SectionDivider";
 import WhatsappButton from "../../components/WhatsappButton";
-import HomeEn from "../HomeEn";
 
-export default function Page() {
-  return <HomeEn />;
-}
+export default function EnglishPage() {
+  return (
     <>
       <Header />
       <main>

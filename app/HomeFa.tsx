@@ -10,11 +10,9 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import About from "../components/About";
 import Stats from "../components/Stats";
-import HomeFa from "./HomeFa";
 
-export default function Page() {
-  return <HomeFa />;
-}
+export default function HomePage() {
+  return (
     <>
       <Header />
       <main>
