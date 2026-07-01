@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function CarImport() {
   return (
     <section className="bg-[#07182D] py-24 text-white">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-16 px-6 items-center">
+      <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
         <div>
           <p className="uppercase tracking-[0.4em] text-[#D4AF37]">
@@ -20,15 +22,32 @@ export default function CarImport() {
             transportation and documentation from start to finish.
           </p>
 
-          <button className="mt-10 rounded-xl bg-[#D4AF37] px-8 py-4 font-bold text-slate-900 hover:bg-yellow-400">
+          <button className="mt-10 rounded-xl bg-[#D4AF37] px-8 py-4 font-bold text-slate-900 transition hover:bg-yellow-400">
             Request Import Consultation
           </button>
         </div>
 
-        <div className="flex h-[500px] items-center justify-center rounded-3xl border border-white/10 bg-white/5">
-          <span className="text-slate-400 text-xl">
-            Vehicle Showcase
-          </span>
+        <div className="relative h-[500px] overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+
+          <Image
+            src="/images/car-import.jpg"
+            alt="Vehicle Import"
+            fill
+            className="object-cover"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-[#07182D]/60 via-transparent to-transparent"></div>
+
+          <div className="absolute bottom-8 left-8">
+            <h3 className="text-3xl font-bold text-white">
+              Premium Vehicle Import
+            </h3>
+
+            <p className="mt-2 text-slate-200">
+              Bashmaq Free Zone
+            </p>
+          </div>
+
         </div>
 
       </div>
