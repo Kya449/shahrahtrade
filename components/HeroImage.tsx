@@ -5,7 +5,7 @@ export default function HeroImage() {
     <div className="relative h-[620px] w-[480px] overflow-hidden rounded-[36px] border border-white/10 shadow-2xl">
 
       <Image
-        src="/images/hero-truck.jpg"
+        src="/images/hero.jpg"
         alt="Shahrah Trade"
         fill
         className="object-cover"

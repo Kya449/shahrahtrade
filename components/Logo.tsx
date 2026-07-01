@@ -1,14 +1,16 @@
+import Image from "next/image";
+
 export default function Logo() {
   return (
-    <a href="#" className="flex items-center gap-4">
+    <a href="/" className="flex items-center gap-4">
 
-      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#F4D46A] to-[#C89B3C] shadow-lg">
-
-        <span className="text-2xl font-black tracking-wider text-[#07182D]">
-          ST
-        </span>
-
-      </div>
+      <Image
+        src="/images/logo.png"
+        alt="Shahrah Trade"
+        width={58}
+        height={58}
+        priority
+      />
 
       <div>
 

@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://shahrahtrade.com"),
 
   applicationName: "Shahrah Trade",
+  icons: {
+  icon: "/images/favicon.ico",
+},
 
   creator: "Shahrah Trade",
 
