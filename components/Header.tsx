@@ -10,7 +10,7 @@ export default function Header() {
 
         <nav className="hidden items-center gap-10 text-sm font-medium text-white lg:flex">
           <a href="#" className="transition hover:text-[#D4AF37]">
-            Overview
+            Home
           </a>
 
           <a href="#services" className="transition hover:text-[#D4AF37]">
@@ -32,7 +32,7 @@ export default function Header() {
             href="#contact"
             className="rounded-xl bg-[#D4AF37] px-6 py-3 font-bold text-[#07182D] transition hover:scale-105"
           >
-            Get Quote
+            Free consultation
           </a>
 
           <LanguageSwitcher />
