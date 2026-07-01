@@ -1,3 +1,4 @@
+import LanguageSwitcher from "./LanguageSwitcher";
 import Logo from "./Logo";
 
 export default function Header() {
