@@ -9,7 +9,7 @@ export default function Stats() {
         </div>
 
         <div>
-          <p className="text-4xl font-bold">500+</p>
+          <p className="text-4xl font-bold">250+</p>
           <p className="mt-2 text-white/70">Shipments</p>
         </div>
 
