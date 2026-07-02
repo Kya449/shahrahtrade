@@ -58,7 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="fa" dir="rtl"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${vazirmatn.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-white font-[var(--font-vazirmatn)] text-slate-900">
         {children}
