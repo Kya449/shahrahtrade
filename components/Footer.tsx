@@ -20,7 +20,7 @@ export default function Footer() {
           </h3>
 
           <p className="mt-4 text-slate-400">
-            +98 918 788 3475
+            +989187883475
           </p>
 
           <p className="mt-2 text-slate-400">

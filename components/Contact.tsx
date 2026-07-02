@@ -23,7 +23,7 @@ export default function Contact() {
               </h3>
 
               <p className="mt-2 text-slate-600">
-                +98 918 788 3475
+                +989187883475
               </p>
             </div>
 

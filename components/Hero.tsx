@@ -13,7 +13,7 @@ export default function Hero() {
         <div>
 
           <p className="text-[#D4AF37]">
-            Shahrah Trade
+            شرکت تجارت بین المللی شاهراه
           </p>
 
           <h1 className="mt-6 text-5xl font-black leading-tight lg:text-7xl">
