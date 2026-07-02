@@ -9,20 +9,20 @@ export default function About() {
         <div>
 
           <SectionTitle
-            subtitle="About Us"
-            title="Who We Are"
+            subtitle="در باره ما"
+            title="تیم شاهراه تجارت "
           />
 
-          <p className="mt-8 leading-9 text-slate-600">
-            Shahrah Trade provides international trade,
-            customs clearance, logistics and vehicle import
-            services through Bashmaq Border.
+          <p className="mt-8 leading-9 text-slate-700">
+            شاهراه تجارت با تکیه بر شبکه گسترده تجاری خود،
+            خدمات تخصصی بازرگانی بین‌المللی، تأمین کالا، ترخیص، لجستیک، 
+            حمل‌ونقل و واردات خودرو را از طریق مرز باشماق ارائه می‌دهد
           </p>
 
-          <p className="mt-6 leading-9 text-slate-600">
-            We help businesses simplify cross-border trade
-            with reliable, transparent and professional
-            logistics solutions.
+          <p className="mt-6 leading-9 text-slate-700">
+            ما با ارائه راهکارهای جامع بازرگانی بین‌المللی،
+            لجستیک، ترخیص کالا و زنجیره تأمین، به کسب‌وکارها کمک می‌کنیم 
+            تجارت فرامرزی خود را با اطمینان، سرعت و شفافیت توسعه دهند
           </p>
 
         </div>

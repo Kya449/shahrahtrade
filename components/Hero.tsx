@@ -10,38 +10,36 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
-        {/* Left */}
-
         <div>
 
-          <p className="uppercase tracking-[0.45em] text-[#D4AF37]">
+          <p className="text-[#D4AF37]">
             Shahrah Trade
           </p>
 
           <h1 className="mt-6 text-5xl font-black leading-tight lg:text-7xl">
-            International
+            واردات خودرو
             <br />
-            Trade &
+            ترخیص کالا
             <br />
-            Vehicle Import
+            تجارت بین‌الملل
           </h1>
 
           <p className="mt-8 max-w-xl text-lg leading-9 text-slate-300">
-            Professional customs clearance, international logistics,
-            import & export and vehicle import through Bashmaq Free Zone.
+            خدمات تخصصی واردات خودرو، ترخیص کالا، حمل‌ونقل بین‌المللی،
+            صادرات و واردات از طریق مرز رسمی باشماق.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-5">
 
             <Button>
-              Get Free Quote
+              دریافت مشاوره رایگان
             </Button>
 
             <a
               href="#services"
               className="rounded-xl border border-white/20 px-8 py-4 font-semibold transition hover:bg-white hover:text-slate-900"
             >
-              Explore Services
+              مشاهده خدمات
             </a>
 
           </div>
@@ -54,7 +52,7 @@ export default function Hero() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                Successful Projects
+                پروژه موفق
               </p>
             </div>
 
@@ -64,7 +62,7 @@ export default function Hero() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                Years Experience
+                سال تجربه
               </p>
             </div>
 
@@ -74,15 +72,13 @@ export default function Hero() {
               </h3>
 
               <p className="mt-2 text-slate-300">
-                Client Satisfaction
+                رضایت مشتریان
               </p>
             </div>
 
           </div>
 
         </div>
-
-        {/* Right */}
 
         <div className="flex justify-center">
           <HeroImage />

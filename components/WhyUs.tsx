@@ -3,24 +3,24 @@ import SectionTitle from "./SectionTitle";
 export default function WhyUs() {
   const items = [
     {
-      number: "01",
-      title: "Experienced Team",
-      text: "Professional experts in international trade and customs procedures.",
+      number: "1",
+      title: "تیم باتجربه",
+      text: "کارشناسان متخصص در زمینه تجارت بین‌الملل و تشریفات گمرکی",
     },
     {
-      number: "02",
-      title: "Bashmaq Border",
-      text: "Direct access to one of Iran's most important commercial border crossings.",
+      number: "2",
+      title: "مرز بین المللی باشماق",
+      text: "دسترسی مستقیم به یکی از مهم‌ترین گذرگاه‌های مرزی تجاری ایران",
     },
     {
-      number: "03",
-      title: "Fast Process",
-      text: "Quick customs clearance and efficient transportation management.",
+      number: "3",
+      title: "فرآیند سریع",
+      text: "ترخیص سریع گمرکی و مدیریت کارآمد حمل‌ونقل",
     },
     {
-      number: "04",
-      title: "Reliable Service",
-      text: "Transparent communication and long-term business partnership.",
+      number: "4",
+      title: "خدمات قابل اطمینان",
+      text: "ارتباط شفاف و شراکت تجاری بلندمدت",
     },
   ];
 
@@ -29,7 +29,7 @@ export default function WhyUs() {
       <div className="mx-auto max-w-7xl px-6">
 
         <SectionTitle
-          subtitle="Why Choose Us"
+          subtitle="چرا شاهراه تجارت"
           title="Why Shahrah Trade"
         />
 

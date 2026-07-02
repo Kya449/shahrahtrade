@@ -11,15 +11,15 @@ export default function Contact() {
         <div>
 
           <SectionTitle
-            subtitle="Contact"
-            title="Let's Work Together"
+            subtitle="تماس با ما"
+            title="درخواست همکاری"
           />
 
           <div className="space-y-8">
 
             <div>
               <h3 className="text-lg font-bold text-[#07182D]">
-                Phone
+                شماره تماس
               </h3>
 
               <p className="mt-2 text-slate-600">
@@ -29,7 +29,7 @@ export default function Contact() {
 
             <div>
               <h3 className="text-lg font-bold text-[#07182D]">
-                Email
+                ایمیل
               </h3>
 
               <p className="mt-2 text-slate-600">
@@ -39,7 +39,7 @@ export default function Contact() {
 
             <div>
               <h3 className="text-lg font-bold text-[#07182D]">
-                Instagram
+                انستاگرام
               </h3>
 
               <p className="mt-2 text-slate-600">
@@ -49,12 +49,11 @@ export default function Contact() {
 
             <div>
               <h3 className="text-lg font-bold text-[#07182D]">
-                Address
+                آدرس
               </h3>
 
               <p className="mt-2 text-slate-600">
-                Parsian Building, Unit 212,
-                Bashmaq Border, Marivan, Iran
+                ایران، مریوان، مرز باشماق، ساختمان پارسیان، دفتر 212
               </p>
             </div>
 
@@ -66,30 +65,30 @@ export default function Contact() {
 
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder="نام و نام خانوادگی"
             className="mb-5 w-full rounded-xl border p-4 outline-none"
           />
 
           <input
             type="email"
-            placeholder="Email Address"
+            placeholder="ایمیل"
             className="mb-5 w-full rounded-xl border p-4 outline-none"
           />
 
           <input
             type="tel"
-            placeholder="Phone Number"
+            placeholder="شماره تماس"
             className="mb-5 w-full rounded-xl border p-4 outline-none"
           />
 
           <textarea
-            placeholder="Your Message"
+            placeholder="متن پیام"
             rows={6}
             className="mb-6 w-full rounded-xl border p-4 outline-none"
           />
 
           <button className="w-full rounded-xl bg-[#D4AF37] py-4 font-bold text-[#07182D] transition hover:bg-yellow-400">
-            Request Consulation
+            درخواست مشاوره
           </button>
 
         </div>

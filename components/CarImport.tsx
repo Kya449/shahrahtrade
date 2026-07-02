@@ -7,23 +7,23 @@ export default function CarImport() {
 
         <div>
           <p className="uppercase tracking-[0.4em] text-[#D4AF37]">
-            Featured Service
+            خدمات ویژه
           </p>
 
           <h2 className="mt-6 text-5xl font-bold leading-tight">
-            Vehicle Import
+            واردات خودرو
             <br />
-            From Bashmaq Free Zone
+            از منطقه آزاد بانه-مریوان
           </h2>
 
           <p className="mt-8 text-lg leading-9 text-slate-300">
-            Shahrah Trade specializes in importing vehicles through
-            Bashmaq Free Zone. We manage customs clearance,
-            transportation and documentation from start to finish.
+           شاهراه تجارت تمامی مراحل واردات خودرو،
+           اعم از خرید، ترخیص، حمل و ثبت اسناد را
+           از ابتدا تا انتها مدیریت می‌کند.
           </p>
 
           <button className="mt-10 rounded-xl bg-[#D4AF37] px-8 py-4 font-bold text-slate-900 transition hover:bg-yellow-400">
-            Request Import Consultation
+            درخواست مشاوره
           </button>
         </div>
 
@@ -40,11 +40,11 @@ export default function CarImport() {
 
           <div className="absolute bottom-8 left-8">
             <h3 className="text-3xl font-bold text-white">
-              Premium Vehicle Import
+            واردات خودرو پلاک منطقه
             </h3>
 
             <p className="mt-2 text-slate-200">
-              Bashmaq Free Zone
+              منطقه آزاد بانه-مریوان
             </p>
           </div>
 

@@ -6,17 +6,17 @@ export default function Footer() {
 
         <div>
           <h2 className="text-2xl font-bold">
-            SHAHRAH TRADE
+            شاهراه تجارت باشماق
           </h2>
 
           <p className="mt-4 leading-8 text-slate-400">
-            Specialized in vehicle import through Bashmaq Free Zone, customs clearance, logistics and international commercial services.
+            متخصص در واردات خودرو از طریق منطقه آزاد مریوان-بانه، ترخیص کالا از گمرک، لجستیک و خدمات بازرگانی بین‌المللی
           </p>
         </div>
 
         <div>
           <h3 className="text-xl font-bold">
-            Contact
+            تماس باما
           </h3>
 
           <p className="mt-4 text-slate-400">
@@ -30,22 +30,22 @@ export default function Footer() {
 
         <div>
           <h3 className="text-xl font-bold">
-            Address
+            آدرس
           </h3>
 
           <p className="mt-4 leading-8 text-slate-400">
-            Parsian Building
+            منطقه آزاد تجاری صنعتی مریوان-بانه
             <br />
-            Bashmaq Border
+            مرز باشماق
             <br />
-            Marivan
+            مریوان
           </p>
         </div>
 
       </div>
 
       <div className="mt-16 border-t border-white/10 pt-8 text-center text-slate-500">
-        © 2026 Shahrah Trade. All rights reserved.
+        تمامی حقوق این وبسایت متعلق به شرکت شاهراه تجارت باشماق است.
       </div>
 
     </footer>

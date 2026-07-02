@@ -9,21 +9,23 @@ export default function Header() {
         <Logo />
 
         <nav className="hidden items-center gap-10 text-sm font-medium text-white lg:flex">
+
           <a href="#" className="transition hover:text-[#D4AF37]">
-            Home
+            خانه
           </a>
 
           <a href="#services" className="transition hover:text-[#D4AF37]">
-            Services
+            خدمات
           </a>
 
           <a href="#about" className="transition hover:text-[#D4AF37]">
-            About
+            درباره ما
           </a>
 
           <a href="#contact" className="transition hover:text-[#D4AF37]">
-            Contact
+            تماس
           </a>
+
         </nav>
 
         <div className="flex items-center gap-3">
@@ -32,7 +34,7 @@ export default function Header() {
             href="#contact"
             className="rounded-xl bg-[#D4AF37] px-6 py-3 font-bold text-[#07182D] transition hover:scale-105"
           >
-            Free consultation
+            مشاوره رایگان
           </a>
 
           <LanguageSwitcher />

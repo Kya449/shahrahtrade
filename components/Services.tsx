@@ -4,20 +4,20 @@ import FeatureCard from "./FeatureCard";
 export default function Services() {
   const services = [
     {
-      title: "Vehicle Import",
-      text: "Professional vehicle import through Bashmaq Free Zone with complete customs documentation.",
+      title: "واردات خودرو",
+      text: "واردات انواع خودرو سواری از طریق منطقه آزاد و مرز رسمی باشماق همراه با انجام تمامی مراحل قانونی",
     },
     {
-      title: "Customs Clearance",
-      text: "Fast, secure and reliable customs clearance handled by experienced specialists.",
+      title: "ترخیص کالا",
+      text: "ترخیص سریع کالا از گمرک با پیگیری کامل اسناد و امور اداری.",
     },
     {
-      title: "International Logistics",
-      text: "Cross-border transportation and logistics management for commercial businesses.",
+      title: "حمل و نقل بین المللی",
+      text: "مدیریت حمل‌ونقل داخلی و بین‌المللی برای کالاهای تجاری.",
     },
     {
-      title: "Import & Export",
-      text: "International trade consulting and commercial import & export services.",
+      title: "صادرات و واردات",
+      text: "مشاوره تخصصی تجارت خارجی و انجام فرآیند صادرات و واردات.",
     },
   ];
 
@@ -29,8 +29,8 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-6">
 
         <SectionTitle
-          subtitle="Our Services"
-          title="Professional Trade Solutions"
+          subtitle="خدمات ما"
+          title="راهکارهای حرفه‌ای تجاری"
         />
 
         <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">

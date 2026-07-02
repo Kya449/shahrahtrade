@@ -5,22 +5,22 @@ export default function Stats() {
 
         <div>
           <p className="text-4xl font-bold">10+</p>
-          <p className="mt-2 text-white/70">Years Experience</p>
+          <p className="mt-2 text-white/70">سال تجربه</p>
         </div>
 
         <div>
           <p className="text-4xl font-bold">250+</p>
-          <p className="mt-2 text-white/70">Shipments</p>
+          <p className="mt-2 text-white/70">پروژه موفق</p>
         </div>
 
         <div>
           <p className="text-4xl font-bold">100+</p>
-          <p className="mt-2 text-white/70">Partners</p>
+          <p className="mt-2 text-white/70">رضایت مشتری</p>
         </div>
 
         <div>
           <p className="text-4xl font-bold">24/7</p>
-          <p className="mt-2 text-white/70">Support</p>
+          <p className="mt-2 text-white/70">پشتیبانی</p>
         </div>
 
       </div>
