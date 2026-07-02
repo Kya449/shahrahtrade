@@ -1,15 +1,15 @@
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import Services from "../components/Services";
-import CarImport from "../components/CarImport";
-import WhyUs from "../components/WhyUs";
-import Stats from "../components/Stats";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import CTA from "../components/CTA";
-import SectionDivider from "../components/SectionDivider";
-import WhatsappButton from "../components/WhatsappButton";
+import Header from "../components/en/Header";
+import Hero from "../components/en/Hero";
+import Services from "../components/en/Services";
+import CarImport from "../components/en/CarImport";
+import WhyUs from "../components/en/WhyUs";
+import Stats from "../components/en/Stats";
+import About from "../components/en/About";
+import Contact from "../components/en/Contact";
+import Footer from "../components/en/Footer";
+import CTA from "../components/en/CTA";
+import SectionDivider from "../components/en/SectionDivider";
+import WhatsappButton from "../components/en/WhatsappButton";
 
 export default function EnglishPage() {
   return (
