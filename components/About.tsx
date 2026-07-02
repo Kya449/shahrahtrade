@@ -30,7 +30,7 @@ export default function About() {
         <div className="overflow-hidden rounded-3xl shadow-2xl">
 
           <Image
-            src="/images/trade.jpg"
+            src="/images/international.jpg"
             alt="About Shahrah Trade"
             width={700}
             height={700}
