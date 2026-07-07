@@ -3,36 +3,25 @@
 import SectionTitle from "./SectionTitle";
 
 export default function Contact() {
-  function encode(data: Record<string, string>) {
-    return Object.keys(data)
-      .map(
-        (key) =>
-          encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    await fetch("/", {
+    const response = await fetch("/forms.html", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: encode({
-        "form-name": "contact",
-        name: String(formData.get("name") || ""),
-        email: String(formData.get("email") || ""),
-        phone: String(formData.get("phone") || ""),
-        message: String(formData.get("message") || ""),
-      }),
+      body: new URLSearchParams(formData as any).toString(),
     });
 
-    window.location.href = "/thank-you";
+    if (response.ok) {
+      window.location.href = "/thank-you";
+    } else {
+      alert("ارسال فرم با مشکل مواجه شد. لطفاً دوباره تلاش کنید.");
+    }
   }
 
   return (
@@ -49,9 +38,7 @@ export default function Contact() {
 
             <div>
               <h3 className="text-lg font-bold text-[#07182D]">ایمیل</h3>
-              <p className="mt-2 text-slate-600">
-                kyanoosh.khornegah@gmail.com
-              </p>
+              <p className="mt-2 text-slate-600">kyanoosh.khornegah@gmail.com</p>
             </div>
 
             <div>
@@ -62,7 +49,7 @@ export default function Contact() {
             <div>
               <h3 className="text-lg font-bold text-[#07182D]">آدرس</h3>
               <p className="mt-2 text-slate-600">
-               کردستان، مریوان، مرز باشماق، ساختمان پارسیان، دفتر 212
+                کردستان، مریوان، مرز باشماق، ساختمان پارسیان، دفتر 212
               </p>
             </div>
           </div>
@@ -71,48 +58,20 @@ export default function Contact() {
         <form
           name="contact"
           method="POST"
-          action="/thank-you"
           onSubmit={handleSubmit}
           className="rounded-3xl border border-slate-200 bg-slate-50 p-10 shadow-lg"
         >
           <input type="hidden" name="form-name" value="contact" />
 
-          <input
-            name="name"
-            type="text"
-            required
-            placeholder="نام و نام خانوادگی"
-            className="mb-5 w-full rounded-xl border p-4 outline-none"
-          />
+          <input name="name" type="text" required placeholder="نام و نام خانوادگی" className="mb-5 w-full rounded-xl border p-4 outline-none" />
 
-          <input
-            name="email"
-            type="email"
-            required
-            placeholder="ایمیل"
-            className="mb-5 w-full rounded-xl border p-4 outline-none"
-          />
+          <input name="email" type="email" required placeholder="ایمیل" className="mb-5 w-full rounded-xl border p-4 outline-none" />
 
-          <input
-            name="phone"
-            type="tel"
-            required
-            placeholder="شماره تماس"
-            className="mb-5 w-full rounded-xl border p-4 outline-none"
-          />
+          <input name="phone" type="tel" required placeholder="شماره تماس" className="mb-5 w-full rounded-xl border p-4 outline-none" />
 
-          <textarea
-            name="message"
-            rows={6}
-            required
-            placeholder="متن پیام"
-            className="mb-6 w-full rounded-xl border p-4 outline-none"
-          />
+          <textarea name="message" rows={6} required placeholder="متن پیام" className="mb-6 w-full rounded-xl border p-4 outline-none" />
 
-          <button
-            type="submit"
-            className="w-full rounded-xl bg-[#D4AF37] py-4 font-bold text-[#07182D] transition hover:bg-yellow-400"
-          >
+          <button type="submit" className="w-full rounded-xl bg-[#D4AF37] py-4 font-bold text-[#07182D] transition hover:bg-yellow-400">
             درخواست مشاوره
           </button>
         </form>
