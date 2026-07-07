@@ -64,7 +64,6 @@ export default function Contact() {
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
           action="/thank-you"
           className="rounded-3xl border border-slate-200 bg-slate-50 p-10 shadow-lg"
         >
