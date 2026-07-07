@@ -1,73 +1,80 @@
+"use client";
+
 import SectionTitle from "./SectionTitle";
 
 export default function Contact() {
+  function encode(data: Record<string, string>) {
+    return Object.keys(data)
+      .map(
+        (key) =>
+          encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    await fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: encode({
+        "form-name": "contact",
+        name: String(formData.get("name") || ""),
+        email: String(formData.get("email") || ""),
+        phone: String(formData.get("phone") || ""),
+        message: String(formData.get("message") || ""),
+      }),
+    });
+
+    window.location.href = "/thank-you";
+  }
+
   return (
-    <section
-      id="contact"
-      className="bg-white py-28"
-    >
+    <section id="contact" className="bg-white py-28">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2">
-
         <div>
-
-          <SectionTitle
-            subtitle="تماس با ما"
-            title="درخواست همکاری"
-          />
+          <SectionTitle subtitle="تماس با ما" title="درخواست همکاری" />
 
           <div className="space-y-8">
-
             <div>
-              <h3 className="text-lg font-bold text-[#07182D]">
-                شماره تماس
-              </h3>
-
-              <p className="mt-2 text-slate-600">
-                +989187883475
-              </p>
+              <h3 className="text-lg font-bold text-[#07182D]">شماره تماس</h3>
+              <p className="mt-2 text-slate-600">+989187883475</p>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold text-[#07182D]">
-                ایمیل
-              </h3>
-
+              <h3 className="text-lg font-bold text-[#07182D]">ایمیل</h3>
               <p className="mt-2 text-slate-600">
                 kyanoosh.khornegah@gmail.com
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold text-[#07182D]">
-                اینستاگرام
-              </h3>
-
-              <p className="mt-2 text-slate-600">
-                @ShahrahTrade
-              </p>
+              <h3 className="text-lg font-bold text-[#07182D]">اینستاگرام</h3>
+              <p className="mt-2 text-slate-600">@ShahrahTrade</p>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold text-[#07182D]">
-                آدرس
-              </h3>
-
+              <h3 className="text-lg font-bold text-[#07182D]">آدرس</h3>
               <p className="mt-2 text-slate-600">
-                ایران، مریوان، مرز باشماق، ساختمان پارسیان، دفتر 212
+               کردستان، مریوان، مرز باشماق، ساختمان پارسیان، دفتر 212
               </p>
             </div>
-
           </div>
-
         </div>
 
         <form
           name="contact"
           method="POST"
           action="/thank-you"
+          onSubmit={handleSubmit}
           className="rounded-3xl border border-slate-200 bg-slate-50 p-10 shadow-lg"
         >
-
           <input type="hidden" name="form-name" value="contact" />
 
           <input
@@ -108,9 +115,7 @@ export default function Contact() {
           >
             درخواست مشاوره
           </button>
-
         </form>
-
       </div>
     </section>
   );
